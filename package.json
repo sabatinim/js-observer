@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "karma": "^1.7.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.1.1",
+    "mkdirp": "^0.5.x",
+    "mocha": "^3.0.2",
+    "watch": "^0.19.2",
+    "sinon": "^4.1.2",
+    "karma-sinon": "^1.0.5"
+  },
+  "scripts": {
+    "test": "karma start --single-run",
+    "prewatch": "mkdirp dist",
+    "watch": "watch 'cat js/model/*.js js/view/*.js js/bus/*.js js/main.js > dist/app.js' js --interval=0.01",
+    "start": "npm install && npm run watch"
+  }
+}
