@@ -1,8 +1,7 @@
-var target = document.querySelector('ul.ulClass');
-var li = target.appendChild(document.createElement('li'));
-var div = document.querySelector('h3.h3Class');;
+let target = document.querySelector('ul.ulClass');
+let li = target.appendChild(document.createElement('li'));
+let h3 = document.querySelector('h3.h3Class');
 
-let model = new ItemModel("Coffee");
-
+let model = new ItemModel("Click me!!!");
 new ItemView(model,li).render();
-new H3View(model,div);
+new H3View(model,h3);
