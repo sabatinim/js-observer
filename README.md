@@ -5,7 +5,7 @@ Show Observer pattern on JS. I create a single model and pass it on multiple vie
 - **npm install**
 - **npm run test** `Using Karma`
 
-#Create dist and execute
+# Create dist and execute
 - **npm run start** `into dist/app.js`
 - **launch index.html and click on the Item**
 
